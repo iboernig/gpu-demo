@@ -42,12 +42,12 @@ RUN git clone https://github.com/ktenzer/gpu-demo.git /deepspeech/gpu-demo
 
 COPY demo.wav /deepspeech
 
-RUN chown -R 1001:0 /deepspeech && \
-    chown -R 1001:0 $HOME
+#RUN chown -R 1001:0 /deepspeech && \
+#    chown -R 1001:0 $HOME
 
 RUN echo "1.0" > /etc/imageversion
 
-USER 1001
+#USER 1001
 
 CMD ["-c", "--", "while true; do sleep 30; done;"]
-ENTRYPOINT ["/bin/bash"]
+#ENTRYPOINT ["/bin/bash"]
