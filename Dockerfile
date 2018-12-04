@@ -49,5 +49,5 @@ RUN echo "1.0" > /etc/imageversion
 
 #USER 1001
 
-CMD ["-c", "--", "while true; do sleep 30; done;"]
+CMD tail -f 
 #ENTRYPOINT ["/bin/bash"]
