@@ -1,4 +1,4 @@
-FROM docker.io/fedora:27
+FROM fedora:27
 
 
 LABEL ios.k8s.display-name="deepspeech" \
