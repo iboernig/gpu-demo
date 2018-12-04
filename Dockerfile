@@ -1,4 +1,4 @@
-FROM fedora:27
+FROM fedora:latest
 
 
 LABEL ios.k8s.display-name="deepspeech" \
